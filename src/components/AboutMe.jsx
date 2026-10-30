@@ -2,7 +2,7 @@ import kart from "../assets/kart.jpg";
 import avatar2 from "../assets/avatar2.jpg";
 export default function AboutMe() {
     return (
-        <section className="page-section">
+        <section className="page-section about-section">
           <span className="page-badge">ABOUT</span>
           <h1 className="page-heading">About Me</h1>
            <div className="page-image-grid">

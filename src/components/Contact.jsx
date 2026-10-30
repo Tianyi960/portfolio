@@ -84,10 +84,16 @@ export default function Contact() {
       });
       setFormData(initialForm);
     } catch (sendError) {
+      const errorText =
+        typeof sendError === "string"
+          ? sendError
+          : sendError?.text || sendError?.message || "Unknown delivery error";
+      const errorCode = sendError?.status ? " (" + sendError.status + ")" : "";
       setStatus({
         type: "error",
-        message:
-          "Something went wrong while sending your message. Please try again in a moment.",
+        message: import.meta.env.DEV
+          ? "EmailJS" + errorCode + ": " + errorText
+          : "Something went wrong while sending your message. Please try again in a moment.",
       });
       // eslint-disable-next-line no-console
       console.error("Email send failed:", sendError);

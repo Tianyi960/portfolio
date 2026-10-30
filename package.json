@@ -1,15 +1,20 @@
 {
-  "name": "p0-project",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 127.0.0.1 --port 5183 --strictPort",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --host 127.0.0.1 --port 4183 --strictPort",
+    "dev:local": "vite --host 127.0.0.1 --port 5183 --strictPort",
+    "preview:local": "vite preview --host 127.0.0.1 --port 4183 --strictPort",
+    "build:verify": "vite build --outDir .local-build",
+    "preview:verify": "vite preview --outDir .local-build --host 127.0.0.1 --port 4184 --strictPort"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "bootstrap": "^5.3.8",
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",

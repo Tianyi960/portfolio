@@ -593,3 +593,45 @@ body {
     padding: 24px 20px 48px;
   }
 }
+
+/* About photo layout */
+.about-section {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.about-section .page-image-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 322.36fr) minmax(0, 567.64fr);
+  width: 100%;
+  max-width: 910px;
+  margin-inline: auto;
+  align-items: start;
+}
+
+.about-section .page-image-wrapper {
+  min-width: 0;
+}
+
+.about-section .page-image {
+  width: 100%;
+  height: auto;
+}
+
+.about-section .about-divider {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-section .page-image-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-section .page-image {
+    width: auto;
+    max-width: 100%;
+    max-height: 430px;
+  }
+}
