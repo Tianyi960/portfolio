@@ -1,9 +1,7 @@
-import scoreSightImage from "../assets/scoresight.png";
-
+const fpsGameVideo = new URL("../assets/FPS Game.mp4", import.meta.url).href;
+const pianoVideo = new URL("../assets/Piano.mp4", import.meta.url).href;
+const tilemapVideo = new URL("../assets/tile2map.mp4", import.meta.url).href;
 const printingVideo = new URL("../assets/3d printing vedio.mp4", import.meta.url).href;
-// 有游戏截图后，在这里导入，例如：
-// import virusImage from "../assets/virus.png";
-// 然后把 Eliminate the Virus 项目的 media.src 改为 virusImage。
 
 export const researchProjects = [
   {
@@ -21,9 +19,9 @@ export const researchProjects = [
     highlights: ["ScoreSight"],
     //contribution: "Project Lead · First Author · UIST ’26 Adjunct Demo",
     media: {
-      type: "image",
-      src: scoreSightImage,
-      alt: "ScoreSight supporting piano music reading with visual guidance, magnification, and customizable display settings",
+      type: "video",
+      src: pianoVideo,
+      alt: "ScoreSight live piano performance and music-reading support demonstration",
     },
     award: "",
     links: [],
@@ -41,9 +39,9 @@ export const researchProjects = [
     ],
     //highlights: ["LangChain-based multimodal RAG pipeline", "RGB edge-matching algorithm"],
     media: {
-      type: "image",
-      src: "", // 填入图片变量后会替换当前项目封面。
-      alt: "Multimodal RAG for procedural content generation",
+      type: "video",
+      src: tilemapVideo,
+      alt: "Tile2Map multimodal RAG and procedural game map generation demonstration",
     },
     award: "",
     links: [],
@@ -60,9 +58,9 @@ export const researchProjects = [
       "I initiated and led an educational FPS game about virus transmission and pandemic prevention, designed the game mechanics, and led development in Lua.",
     ],
     media: {
-      type: "image",
-      src: "", // 填入截图变量后，项目封面会自动替换为截图。
-      alt: "Eliminate the Virus educational game",
+      type: "video",
+      src: fpsGameVideo,
+      alt: "Eliminate the Virus FPS gameplay video",
     },
     award: "Best Game Award",
     links: [{ label: "Play on Roblox", href: "" }], // 填入真实链接后按钮才会显示。

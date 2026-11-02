@@ -15,7 +15,7 @@ export default function AboutMe() {
       </div>
       <div className="page-bio">
         <h2 className="page-subheading">Tianyi Zhang(Chinese: 张天怡)</h2>
-        <p className="page-subtext page-subtext-tight">CS & Math senior</p>
+        <p className="page-subtext page-subtext-tight">CS & Math & Game Design</p>
         <div className="page-separator"></div>
       </div>
       <p className="page-subtext about-paragraph">

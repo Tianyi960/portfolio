@@ -98,7 +98,7 @@ export default function Home() {
               </strong>
             </p>
 
-            <div className="d-flex flex-wrap align-items-center gap-4">
+            <div className="home-hero__social-links d-flex flex-wrap align-items-center gap-4">
               {socialLinks.map((link) => {
                 const Icon = link.icon;
                 return (

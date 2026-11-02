@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Piano keyboard</title>
+  <rect x="2" y="4" width="60" height="56" rx="8" fill="#182127"/>
+  <rect x="6" y="8" width="52" height="48" rx="3" fill="#fff"/>
+  <path d="M13.4 8v48M20.9 8v48M28.3 8v48M35.7 8v48M43.1 8v48M50.6 8v48" stroke="#182127" stroke-width="1.1"/>
+  <g fill="#182127">
+    <rect x="10.7" y="8" width="5.4" height="29" rx="1"/>
+    <rect x="18.2" y="8" width="5.4" height="29" rx="1"/>
+    <rect x="33" y="8" width="5.4" height="29" rx="1"/>
+    <rect x="40.4" y="8" width="5.4" height="29" rx="1"/>
+    <rect x="47.9" y="8" width="5.4" height="29" rx="1"/>
+  </g>
+</svg>
