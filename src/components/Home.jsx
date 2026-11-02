@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import heroAvatar from "../assets/avatar.jpg";
+import heroAvatar from "../assets/avatar1.jpg";
 
 const LinkedInIcon = () => (
   <svg
@@ -42,14 +42,21 @@ const GithubIcon = () => (
   </svg>
 );
 
-const InstagramIcon = () => (
+const ResumeIcon = () => (
   <svg
     viewBox="0 0 24 24"
     role="img"
     aria-hidden="true"
     focusable="false"
   >
-    <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm10 1a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
+    <path
+      d="M6 2h8l4 4v16H6V2zm8 0v5h4M9 11h6M9 15h6M9 19h4"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
@@ -62,9 +69,9 @@ const socialLinks = [
   },
   { href: "https://github.com/Tianyi960", label: "Github", icon: GithubIcon },
   {
-    href: "https://www.instagram.com/tianyi_6285/",
-    label: "Instagram",
-    icon: InstagramIcon,
+    href: "https://drive.google.com/file/d/1p22rffXosg9TWAhEx4QbTbSaw_h6_Uat/view?usp=drive_link",
+    label: "Resume",
+    icon: ResumeIcon,
   },
 ];
 
@@ -82,10 +89,15 @@ export default function Home() {
           </Col>
           <Col md={7} lg={8} className="home-hero__content">
             <h1 className="display-4 fw-bold mb-3">Tianyi Zhang</h1>
-            <p className="mb-4 home-hero__intro">
-            Undergraduate junior at UW–Madison majoring in <span className="home-hero__intro-highlight">Computer Science</span> and <span className="home-hero__intro-highlight">Mathematics</span>, with a <span className="home-hero__intro-highlight">Game Design</span> minor. HCI research assistant studying <span className="home-hero__intro-highlight">Augmented Reality (AR)</span> and <span className="home-hero__intro-highlight">Accessibility</span>.
+            <p className="mb-3 home-hero__intro">
+              I’m a senior at UW–Madison pursuing honors in both <span className="home-hero__intro-highlight">Computer Science</span> and <span className="home-hero__intro-highlight">Mathematics</span>, along with a certificate in <span className="home-hero__intro-highlight">Game Design</span>. My research interests include <span className="home-hero__intro-highlight">Human–AI Interaction</span> and <span className="home-hero__intro-highlight">Accessibility</span>.
             </p>
-        
+            <p className="mb-4 home-hero__intro">
+              <strong className="home-hero__opportunities">
+                I’m seeking PhD opportunities for Fall 2027 and am open to research and industry internships.
+              </strong>
+            </p>
+
             <div className="d-flex flex-wrap align-items-center gap-4">
               {socialLinks.map((link) => {
                 const Icon = link.icon;

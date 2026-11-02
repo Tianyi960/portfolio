@@ -4,7 +4,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2 className="logo">Tianyi</h2>
+        <h2 className="logo">Tianyi Zhang</h2>
       </div>
       <nav className="sidebar-nav">
         <NavLink
