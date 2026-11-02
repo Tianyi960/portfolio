@@ -59,7 +59,7 @@ export default function Publications() {
             <p className="publication-venue">
               <strong className="publication-venue-status">To appear at UIST ’26 Adjunct</strong>{" "}
               <a
-                href="https://drive.google.com/drive/folders/1AfGt7gKJx_zkBUZDq7vz6zU7Gkf_p3l-"
+                href="https://drive.google.com/file/d/1maG5Qx-E2MYb-jy5ovQ5xw872NoBOz4z/view?usp=drive_link"
                 className="publication-resource-link"
                 target="_blank"
                 rel="noopener noreferrer"
